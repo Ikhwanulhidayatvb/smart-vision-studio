@@ -1,0 +1,40 @@
+{
+  "assistant_name": "Santo",
+  "owner_name": "Boss Budi",
+  "jarvis_voice": "en-GB-RyanNeural",
+  "jarvis_rate": "-3%",
+  "jarvis_pitch": "-6Hz",
+  "rules": [
+    {
+      "id": "wake_santo",
+      "patterns": [
+        "santo",
+        "hey santo",
+        "hello santo",
+        "hi santo",
+        "halo santo",
+        "ok santo",
+        "okay santo",
+        "santo wake up"
+      ],
+      "match_type": "exact",
+      "response": "Yes, sir.",
+      "action": "SANTO_WAKE"
+    },
+    {
+      "id": "who_am_i",
+      "patterns": [
+        "who am i",
+        "santo who am i",
+        "who am i santo",
+        "tell me who am i",
+        "do you know me",
+        "siapa saya",
+        "hu em ai"
+      ],
+      "match_type": "contains",
+      "response": "Boss Budi, is there anything I can help you with?",
+      "action": "CUSTOM_REPLY"
+    }
+  ]
+}
